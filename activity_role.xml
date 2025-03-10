@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- Logo de la aplicación -->
+
+    <!-- Botón para Registrarse como Paciente -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="255dp"
+        android:layout_height="234dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_balanced_mind" />
+
+    <Button
+        android:id="@+id/btnPaciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse como Paciente"
+        android:backgroundTint="@color/verde_claro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para Registrarse como Psicólogo -->
+    <Button
+        android:id="@+id/btnPsicologo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse como Psicólogo"
+        android:backgroundTint="@color/azul_claro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp" />
+</LinearLayout>

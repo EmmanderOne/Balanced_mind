@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Logo de la aplicación -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_balanced_mind" />
+
+        <!-- Campo para el nombre completo -->
+        <EditText
+            android:id="@+id/etNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo para el correo electrónico -->
+
+        <!-- Campo para el teléfono -->
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Correo electrónico"
+            android:padding="12dp"
+            android:textColorHint="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo para el número de cédula -->
+        <EditText
+            android:id="@+id/etNumeroCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de cédula"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo para la especialidad -->
+        <EditText
+            android:id="@+id/etEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especialidad"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo para la contraseña -->
+        <EditText
+            android:id="@+id/etContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo para el domicilio -->
+        <EditText
+            android:id="@+id/etDomicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Domicilio"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo para el horario -->
+        <EditText
+            android:id="@+id/etHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horario"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CheckBox para aceptar términos y condiciones -->
+        <CheckBox
+            android:id="@+id/cbTerminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:minHeight="48dp"
+            android:text="Acepto los términos y condiciones"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- Botón para registrarse -->
+        <Button
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

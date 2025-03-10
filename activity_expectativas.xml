@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="108dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_balanced_mind" />
+
+        <!-- Pregunta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué esperas lograr con esta asesoría?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Opciones de expectativas -->
+        <RadioGroup
+            android:id="@+id/rgExpectativas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbMejorarSaludMental"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mejorar mi salud mental"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbReducirEstres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reducir el estrés"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbManejarAnsiedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manejar la ansiedad"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbMejorarRelaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mejorar mis relaciones"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbAumentarAutoestima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aumentar mi autoestima"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbLograrMetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lograr metas personales"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbEntenderEmociones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entender mis emociones"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbHabilidadesSociales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desarrollar habilidades sociales"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbSuperarTraumas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Superar traumas"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbMejorarRendimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mejorar rendimiento laboral/académico"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbOtraExpectativa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otra"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Campo para "Otra expectativa" -->
+        <EditText
+            android:id="@+id/etOtraExpectativa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especifica otra expectativa"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

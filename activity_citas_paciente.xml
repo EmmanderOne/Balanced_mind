@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_balanced_mind"
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Selector de fecha -->
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de la cita"
+            android:inputType="none"
+            android:focusable="false"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:padding="12dp"/>
+
+        <!-- Selector de hora -->
+        <EditText
+            android:id="@+id/etHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora de la cita"
+            android:layout_marginTop="16dp"
+            android:inputType="none"
+            android:focusable="false"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:padding="12dp"/>
+
+        <!-- Campo de motivo -->
+        <EditText
+            android:id="@+id/etMotivo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Motivo de la consulta"
+            android:layout_marginTop="16dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:padding="12dp"/>
+
+        <!-- Botón de acción -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitar Cita"
+            android:layout_marginTop="24dp"
+            android:onClick="solicitarCita"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

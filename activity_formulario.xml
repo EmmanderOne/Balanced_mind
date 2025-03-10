@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="251dp"
+        android:layout_height="226dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_balanced_mind" />
+
+    <!-- Botón para Datos Personales -->
+    <Button
+        android:id="@+id/btDatosPersonales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos Personales"
+        android:backgroundTint="@color/verde_claro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para Antecedentes -->
+    <Button
+        android:id="@+id/btAntecedentes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Antecedentes"
+        android:backgroundTint="@color/verde_claro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para Motivo de Consulta -->
+    <Button
+        android:id="@+id/btMotivoConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motivo de Consulta"
+        android:backgroundTint="@color/verde_claro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para Expectativas -->
+    <Button
+        android:id="@+id/btExpectativas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expectativas"
+        android:backgroundTint="@color/verde_claro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón para Enviar Formulario -->
+    <Button
+        android:id="@+id/btnEnviarFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Formulario"
+        android:backgroundTint="@color/azul_claro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:enabled="false" />
+</LinearLayout>

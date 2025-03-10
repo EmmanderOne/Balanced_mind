@@ -1,0 +1,191 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Logo de la aplicación -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_balanced_mind"
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Pregunta 1: Antecedentes personales (opciones predefinidas) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Has experimentado alguno de los siguientes síntomas o problemas?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgAntecedentesPersonales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <!-- Síntomas Físicos -->
+            <RadioButton
+                android:id="@+id/rbDoloresCabeza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dolores de cabeza"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbDoloresEstomago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dolores de estómago"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbMareos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mareos"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+            <RadioButton
+                android:id="@+id/rbAnsiedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ansiedad"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+            <RadioButton
+                android:id="@+id/rbRelajarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dificultad para relajarse"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+            <RadioButton
+                android:id="@+id/rbAislado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aislado(a)"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+            <RadioButton
+                android:id="@+id/rbSuicidio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ideas de suicidio"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+            <RadioButton
+                android:id="@+id/rbDrogas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consumo de drogas"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+            <RadioButton
+                android:id="@+id/rbEconomicos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Problemas económicos"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbOtroAntecedente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Campo para "Otro antecedente" (solo visible si se selecciona "Otro") -->
+        <EditText
+            android:id="@+id/etOtroAntecedente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especifica otro antecedente"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Pregunta 2: Antecedentes familiares -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Hay algún miembro de tu familia que haya tenido alguno de estos problemas o alguno parecido?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgAntecedentesFamiliares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbSiFamilia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbNoFamilia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbNoSeFamilia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No sé"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Campo para "Familiar específico" (solo visible si se selecciona "Sí") -->
+        <EditText
+            android:id="@+id/etFamiliarEspecifico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especifica el familiar (ej. Padre, Madre, Hermano)"
+            android:backgroundTint="@color/verde_claro"
+            android:textColorHint="@color/verde_claro"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone" />
+
+        <!-- Botón para guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

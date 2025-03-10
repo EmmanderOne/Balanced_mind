@@ -1,0 +1,263 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Logo de la aplicación -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_balanced_mind"
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Pregunta 1: Motivo principal (opciones predefinidas) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es el motivo principal de tu asistencia a ésta asesoría?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgMotivoPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbAnsiedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ansiedad"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbDepresion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Depresión"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbEstres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estrés"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbOtroMotivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Campo para "Otro motivo" (solo visible si se selecciona "Otro") -->
+        <EditText
+            android:id="@+id/etOtroMotivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especifica otro motivo"
+            android:backgroundTint="@color/verde_claro"
+            android:textColorHint="@color/verde_claro"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Pregunta 2: Afectación (opciones predefinidas) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo te afecta ésta situación y en qué áreas de tu vida?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgAfectacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbLaboral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Área laboral o académica"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRelaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relaciones personales"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbSaludFisica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salud física"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbSaludEmocional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salud emocional"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbAutocuidado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autocuidado"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbFinanzas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finanzas"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbOtraAfectacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Campo para "Otra afectación" (solo visible si se selecciona "Otro") -->
+        <EditText
+            android:id="@+id/etOtraAfectacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especifica otra afectación"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Pregunta 3: Acciones tomadas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué has hecho tú para resolverlo?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgAcciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbHablarAmigos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hablé con amigos o familiares"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbBuscarInformacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Busqué información en internet"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbConsultarProfesional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consulté a un profesional"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRelajacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Practiqué técnicas de relajación"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbCambiosEstiloVida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hice cambios en mi estilo de vida"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbNada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nada, no he hecho nada"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbOtraAccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="8dp" />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/etOtraAccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Especifica otra acción"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone" />
+
+        <!-- Botón para guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>
